@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="hidden" id="login">
+        <div style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: center;">
+            <div class="background">
+                <div>
+                    <h1 style="text-align: center;">🗝️</h1>
+                    <span style="font-size: 1.8rem; font-weight: 700; color: black;">Lock the Door</span>
+                </div>
+                <div>
+                    <form id="login-form" class="login-form" >
+                        <input maxlength="15" type="text" placeholder="username" class="username-input" style="margin-top: 30px; color: black;"/>
+                    </form>
+                    <span class="hidden" id="error-span">
+                        Please write your username
+                    </span>
+                    <form id="login-form-button">
+                        <input type="submit" value="Log In" class="username-input" style="background-color: rgb(151, 183, 210); margin: 10px 0px 30px 0px; font-size: 0.9rem;"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden" id="contents" style="width: 100%; height: 100%;">
+        <header>
+            <div id="header-title"><a href="./index.html" style="text-decoration-line: none;">🌱Plant</a></div>
+            <div style="display: flex; align-items: center;">
+                <div id="welcome">
+                    <span style="font-size: 1.4rem; margin-right: 16px;"></span>
+                </div>
+                <div style="margin: 0 16px 0 0;" id="noti-icon">
+                    <img src="img/bell-regular.svg" class="icon" style="cursor: pointer;"/>
+                    <div id="noti-box">
+                        <span>읽지 않은 알림이 없습니다.</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/arrow-right-from-bracket-solid.svg" class="icon" id="logout" style="cursor: pointer;"/>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="background-blur"></div>
+            <div style="width: 100%; height: 10%;"></div>
+            <section>
+                <div id="calender">
+                    <div id="calender-head">
+                        <div class="year-month">
+                            <div>&lt;</div>
+                            <div>&nbsp;2023년 6월&nbsp;</div>
+                            <div>&gt;</div>
+                        </div>
+                    </div>
+                    <div id="calender-body">
+                        <table>
+                            <th id="sun">S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>T</th>
+                            <th>F</th>
+                            <th id="sat">S</th>
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                            </tr>
+
+                            <tr>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                            </tr>
+
+                            <tr>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                            </tr>
+
+                            <tr>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="todo">
+                    <div style="width: 100%; height: 100%;">
+                        <div class="todo-title">
+                            <span>오늘</span>
+                            <span id="clock">0000년 0월 0일 월요일</span>
+                        </div>
+                        <form id="todo-form">
+                            <input type="text" class="todo-input" placeholder="Write a todo and Press Enter" required/>
+                        </form>
+                        <ul id="todo-list" class="list"></ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="js/index.js"></script>
+<script src="js/todo.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/login.js"></script>
+<script src="js/logout.js"></script>
+<script src="js/hello.js"></script>
+</html>

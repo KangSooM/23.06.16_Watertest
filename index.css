@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Pretendard';
+    color: white;
+    font-weight: 500;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-image: url(img/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.username-input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    outline: none;
+    border: 0;
+    padding: 10px 10px;
+}
+
+.error {
+    color: red;
+    display: block;
+}
+
+/* ///////////////////////////// */
+
+.background {
+    width: 17%;
+    height: 43%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid rgba(256, 256, 256, 0.42);
+    border-radius: 26px;
+    background-color: rgba(256, 256, 256, 0);
+    backdrop-filter: blur(20px) brightness(96%);
+    -webkit-backdrop-filter: blur(20px) brightness(96%);
+}
+
+/* ///////////////////////////// */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    padding: 0 78px;
+    position: absolute;
+    z-index: 100;
+
+    background-color: rgba(256, 256, 256, 0);
+    border: 2px solid rgba(255, 255, 225, 0.42);
+    backdrop-filter: blur(20px) brightness(88%);
+    -webkit-backdrop-filter: blur(20px) brightness(88%);
+}
+
+#header-title {
+    display: flex;
+    align-items: center;
+    font-size: 2.6rem;
+}
+
+#noti-icon:hover #noti-box{
+    display: flex;
+}
+
+.icon {
+    height: 2rem;
+}
+
+#noti-box {
+    display: none;
+    width: 200px;
+    height: 126px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+    right: 8%;
+
+    border: 2px solid rgba(256, 256, 256, 0.42);
+    border-radius: 26px;
+    background-color: rgba(256, 256, 256, 0);
+    backdrop-filter: blur(20px) brightness(96%);
+    -webkit-backdrop-filter: blur(20px) brightness(96%);
+}
+
+/* ///////////////////////////// */
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+#background-blur {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(256, 256, 256, 0);
+    backdrop-filter: blur(6px) brightness(102%);
+    -webkit-backdrop-filter: blur(6px) brightness(102%);
+    position: absolute;
+    z-index: -1;
+    
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 90%;
+    padding: 0 60px;
+}
+
+/* //////////////////////////// */
+
+#calender {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 94%;
+
+    border: 2px solid rgba(256, 256, 256, 0.42);
+    border-radius: 26px;
+    background-color: rgba(256, 256, 256, 0);
+    backdrop-filter: blur(20px) brightness(96%);
+    -webkit-backdrop-filter: blur(20px) brightness(96%);
+}
+
+#calender-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 13%;
+    align-items: center;
+    padding: 26px 40px;
+    margin: 0 0 6px 0;
+}
+
+.year-month {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.8rem;
+}
+
+#calender-body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0 46px 42px 46px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+
+th {
+    padding: 0;
+    height: 38px;
+    font-size: 1.5rem;
+}
+
+td {
+    padding: 12px;
+    width: 14.28%;
+    height: 20%;
+    text-align: center;
+    vertical-align : top;
+    font-size: 1.2rem;
+}
+
+#sun {
+    color : red;
+}
+
+#sat {
+    color: blue;
+}
+
+/* ///////////////////////////// */
+
+#todo {
+    display: flex;
+    width: 33%;
+    height: 94%;
+    padding: 26px 40px;
+
+    border: 2px solid rgba(256, 256, 256, 0.42);
+    border-radius: 26px;
+    background-color: rgba(256, 256, 256, 0);
+    backdrop-filter: blur(20px) brightness(96%);
+    -webkit-backdrop-filter: blur(20px) brightness(96%);
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+}
+
+.todo-title {
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.todo-title span:first-child {
+    font-size: 2.5rem;
+}
+
+#clock {
+    font-size: 1.3rem;
+}
+
+.todo-input {
+    width: 100%;
+    background-color: transparent;
+    padding: 10px 4px;
+    margin-top: 4px;
+    border-radius: 0;
+    box-shadow: none;
+    appearance: none;
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid rgb(148, 150, 156);
+    font-size: 1.2rem;
+}
+
+form ::placeholder {
+    font-size: 1rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 100%; */
+    padding: 0;
+
+    margin-top: 8px;
+}
+
+.list :first-child{
+    margin-top: 0;
+}
+
+/* li */
+.list-text{
+    list-style: none;
+    margin-top: 4px;
+    padding: 20px;
+
+    border-radius: 8px;
+    background-color: rgba(209, 207, 212, 0.61);
+    backdrop-filter: blur(30px) brightness(115%);
+    -webkit-backdrop-filter: blur(30px) brightness(115%);
+}
+
+
+/* div */
+.list-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.list-box button{
+    display: flex;
+    font-size: 1.2rem;
+    margin-right: 8px;
+    font-weight: 400;
+    color: black;
+    height: 1.2rem;
+    width: 1.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-box span{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
+}
